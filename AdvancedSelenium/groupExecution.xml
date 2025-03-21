@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  		<run>
+  			<include name="FT"></include>
+  			<include name="IT"></include>
+  			<exclude name="ST"></exclude>
+  		</run>
+  </groups>
+    <classes>
+      <class name="testNG2_Execution.LaunchFacebook"/>
+      <class name="testNG2_Execution.LaunchInstagram"/>
+      <class name="testNG2_Execution.LaunchWhatsapp"/>
+      <class name="testNG3_Execution.LaunchBMWMotors"/>
+      <class name="testNG3_Execution.LaunchJawaMotors"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
